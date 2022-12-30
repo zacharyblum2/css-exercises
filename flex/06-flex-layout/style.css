@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+.header, .footer {
+  display: flex; 
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.content {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   width: 600px;
+}
+
+a {
+  color: grey;
+  text-decoration: none; /* removes the underlines of text */
+}
+
+/* Use ul rather than left-links and right-links individually */
+ul {
+  display: flex;
+  list-style: none; /* removes the dots from lists */
+  margin: 0; 
+  padding: 0;
+  gap: 16px;
 }
 
 button {
